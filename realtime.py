@@ -60,8 +60,8 @@ def main():
     symbols_all = tracker_collection.distinct("symbol")
     # symbols = [symbol for symbol in symbols_all if symbol not in ['TSLA']]
     symbols = [symbol for symbol in symbols_all if symbol not in ['TSLA', 'AAPL', 'AMZN', 'FB', 'GOOG', 'MSFT', 'NVDA']]
-    #thread_count = len(symbols)
-    thread_count = 3
+    thread_count = len(symbols)
+    #thread_count = 3
 
 
     threads = []
