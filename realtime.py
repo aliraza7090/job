@@ -15,7 +15,7 @@ client = pymongo.MongoClient('mongodb+srv://alphaTrendDbUser:tj7NkzXcE0v4D7T6@al
 db = client['alpha-trend-db']
 
 tracker_collection = db.twitter_tracker
-detail_data = db.twitter_detail1
+detail_data = db.twitter_detail
 
 def start_symbol(symbol):
     time_now = datetime.datetime.utcnow().replace(tzinfo=pytz.utc)
